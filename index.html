@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Oracle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <main id="main">
+        <div>
+            <h1>Encriptador</h1>
+        </div>
+        <div id="info">
+            <details>
+                <summary>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-circle" width="16" height="16" viewBox="0 0 24 24" stroke-width="2.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="12" r="9" />
+                        <line x1="12" y1="8" x2="12" y2="12" />
+                        <line x1="12" y1="16" x2="12.01" y2="16" />
+                    </svg>
+                    <span>Reglas</span>
+                </summary>
+                <ul>
+                    <li>Únicamente minúsculas</li>
+                    <li>No se permiten caracteres especiales</li>
+                    <li>El ignorar estas reglas podría afectar el resultado</li>
+                </ul>
+            </details>
+        </div>
+        <div id="app">
+            <div class="seccion-entrada">
+                <div>
+                    <h3 id="texto-entrada">Entrada</h3>
+                    <textarea name="texto" rows="8" id="entrada" style="resize: none;" placeholder="Escribe algo..."></textarea>
+                    <span id="contador-entrada">0</span>
+                    <span id="error_entrada" class="error"></span>
+                </div>
+                <div class="botones">
+                    <button id="encriptar">Encriptar</button>
+                    <button id="desencriptar">Desencriptar</button>
+                </div>
+            </div>
+            
+            <div id="seccion-salida" class="seccion-salida">
+                <h3 id="texto-resultado">Resultado</h3>
+                <div class="salida-container">
+                    <p id="salida"></p>
+                </div>
+                <span id="contador-salida">0</span>
+                <span id="error_salida" class="error"></span>
+                <div class="botones">
+                    <button id="copiar">Copiar Resultado</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>Autor: <span><a href="https://github.com/AlbaSly">Brando Raxel Arias Moreno</a></span></p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
