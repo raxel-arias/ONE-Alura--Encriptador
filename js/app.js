@@ -88,7 +88,7 @@
         }
 
         function entradaValidada() {
-            $entrada.value = $entrada.value.trim().replace(REGEX_SPECIAL_REPLACE, '').toLowerCase();
+            $entrada.value = $entrada.value.trim().toLowerCase().replace(REGEX_SPECIAL_REPLACE, '');
 
             if (!$entrada.value) {
                 mostrarError($error_entrada, 'Ingrese un texto primero!');
