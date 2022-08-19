@@ -33,7 +33,9 @@
         }
         
         //Regex
-        const REGEX_SPECIAL_REPLACE = /[^a-zA-Z0-9 ]/g;
+        const REGEX_SPECIAL_REPLACE = /[^a-z ]/g;
+        // /[^a-zA-Z0-9 ]/g for including uppercases and numbers
+        // /[^a-zA-Z ]/g for including uppercases and excluding numbers
         const REGEX_VOWELS = /[aeiou]/gi;
         const REGEX_ENCRYPTED_VOWELS = /ai|enter|imes|ober|ufat/gi;
 
